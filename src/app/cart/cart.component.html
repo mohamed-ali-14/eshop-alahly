@@ -1,0 +1,118 @@
+<div class="container py-5">
+  <br />
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-3 p-2" *ngFor="let item of cartDis">
+          <div class="card text-center" *ngIf="item.dis">
+            <img [src]="item.photo" class="card-img-top w-100" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">{{ item.name }}</h5>
+              <div *ngIf="item.dis">
+                <div class="d-flex align-items-center">
+                  <a class="btn" (click)="add(item)"> +</a>
+                  <h6 class="px-2">{{ item.quantity }}</h6>
+                  <a class="btn btn-dark" (click)="remove(item)"> -</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-header">المشتريات</div>
+        <div class="card-body d-flex flex-column">
+          <table class="card-text">
+            <thead>
+              <tr>
+                <th class="px-2">الصنف</th>
+                <th class="px-2">العدد</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let item of cartDis">
+              <td>{{ item.name }}</td>
+              <td>{{ item.quantity }}</td>
+            </tbody>
+          </table>
+          <br />
+          <h6>{{ price|discount|number}} = قيمة المشتريات</h6>
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            اكمال عمليه الشراء
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade "
+    id="staticBackdrop"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+   
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog d-flex flex-column justify-content-end">
+      <div class="modal-content ">
+        <div class="modal-header ">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">
+            اكمال عمليه الشراء
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form >
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">
+                رقم الهاتف</label
+              >
+              <input type="text" class="form-control" id="recipient-name" />
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">العنوان</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form >
+          <table class="card-text table2 text-center">
+            <thead>
+              <tr>
+                <th class="px-2">الصنف</th>
+                <th class="px-2">العدد</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let item of cartDis">
+              <td>{{ item.name }}</td>
+              <td>{{ item.quantity }}</td>
+            </tbody>
+          </table>
+          <br />
+          <h6 class="text-center">{{ price|discount|number }} = قيمة المشتريات</h6>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn"
+            data-bs-dismiss="modal"
+          >
+            طلب المنتجات
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

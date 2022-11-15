@@ -1,0 +1,50 @@
+<div class="container py-5 ">
+  
+  <h2 class="text-end" > اهلا بك فى متجر نادى القرن</h2>
+  <br>
+ 
+
+
+<div class="row g-2 py-5">
+  <div class="col-md-4 " routerLink="/mlabs">
+    <div class="cat">
+    <img  src="../assets/mlabs.png" alt="">
+  
+  <h5 class="">ملابس</h5></div>
+</div>
+
+  <div class="col-md-4" routerLink="/ex"> <div class="cat">
+    <img  src="../assets/ex.png" alt="">
+  
+  <h5 class="">اكسسوارات</h5></div></div>
+  <div class="col-md-4 " routerLink="/shonat"><div class="cat">
+    <img  src="../assets/shonat.png" alt="">
+  
+  <h5 class="">شنط</h5></div></div>
+  
+</div>
+
+
+
+
+
+
+  
+<h3 class="text-end" > وصل حديثا</h3>
+    <div class="row">
+<div class="col-md-3 col-6 p-2 item" *ngFor="let item of all">
+  <div class="card text-center">
+    <img [src]="item.photo" class="card-img-top w-100" alt="...">
+    <div class="card-body">
+      <h5 class="card-title ">{{item.name}}</h5>
+      <h6 class="linethrou">{{item.price}}</h6>
+      <h6>{{item.price|discount|currency:'EGP  '}} </h6>
+     
+    </div>
+  </div>
+</div>
+
+    </div>
+    </div>
+ 
+

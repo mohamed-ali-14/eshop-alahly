@@ -1,0 +1,46 @@
+r .card {
+  background-color: #e4e4e4 !important;
+  border-width: 0 !important;
+ 
+}
+
+.btn {
+  background-color: red;
+  color: white !important;
+}
+.card-body {
+  background-color: black;
+  border-radius: 0 0 8px 8px;
+}
+.card-body h5,h6,
+a {
+  color: rgb(255, 255, 255) !important;
+}
+.btn-dark {
+  background-color: #4f4c4d;
+}
+table{
+  color: white !important; 
+}
+.table2{
+  color: rgb(0, 0, 0) !important; 
+} 
+.modal-body h6{
+  color: rgb(0, 0, 0) !important ; 
+}
+
+.modal-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.modal-body{
+  display: flex;
+  flex-direction:column !important;
+  justify-content:center!important;
+}
+form{
+  display: flex;
+  flex-direction:column !important;
+  justify-content:end!important;
+}

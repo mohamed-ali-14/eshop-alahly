@@ -1,0 +1,47 @@
+.card{
+  background-color: #e4e4e4;
+  border-width: 0;
+ 
+}
+.btn{
+  background-color: red;
+}
+.card-body{
+  background-color: black;
+  border-radius: 0  0 20px 20px;
+}
+.card-body h5,a{
+  color: rgb(255, 255, 255) !important;
+}
+.btn-dark{
+  background-color: #4f4c4d;
+}
+.cat{
+  border-radius: 50px;
+  background-color: black;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+}
+.card-body h5,a,h6{
+  color: rgb(255, 255, 255) !important;
+}
+
+.linethrou{
+  text-decoration: line-through;
+}
+.cat img{
+  
+  transition: all .5s;
+}
+.cat:hover img{
+  transform: scale(1.2);
+  
+}
+.item{
+  transition: all .5s;
+}
+.item:hover{
+  transform: scale(1.1);
+}

@@ -1,0 +1,22 @@
+<div class="container py-5 ">
+  
+  <h2 class="text-end" > اهلا بك فى متجر نادى القرن</h2>
+  <br>
+ 
+  
+    <div class="row g-2">
+<div class="col-md-3 col-6 p-2" *ngFor="let item of mlabs">
+  <div class="card text-center">
+    <img [src]="item.photo" class="card-img-top w-100" alt="...">
+    <div class="card-body">
+      <h5 class="card-title ">{{item.name}}</h5>
+      <h6 class="linethrou">{{item.price}}</h6>
+      <h6>{{item.price|discount|currency:'EGP  '}} </h6>
+      <div> <a class="btn btn-dark" *ngIf="item.dis" (click)="remove(item)"> {{added}}</a>
+        <a class="btn " *ngIf="!item.dis" (click)="addToCart(item)">اضافة الى السلة</a></div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    </div>
