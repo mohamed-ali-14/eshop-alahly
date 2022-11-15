@@ -9,7 +9,7 @@ import { ShonatComponent } from './shonat/shonat.component';
 
 NotfoundComponent
 const routes: Routes = [
-{path:" ",redirectTo:"home",pathMatch:"full"},
+{path:"  ",redirectTo:"home",pathMatch:"full"},
 {path:"home",component:HomeComponent},
 {path:"shonat",component:ShonatComponent},
 {path:"mlabs",component:MlabsComponent},
