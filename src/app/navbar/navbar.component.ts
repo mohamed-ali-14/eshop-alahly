@@ -9,7 +9,7 @@ import { MontagatService } from '../montagat.service';
 })
 export class NavbarComponent implements OnInit {
   logo: string = '../assets/footer-logo.png';
-  panar: string = '../assets/AlAhly_website_banner_22020_03-1-large.png';
+ 
   num: any = 0;
   offset: number = 1;
   display: any = false;
@@ -42,22 +42,22 @@ export class NavbarComponent implements OnInit {
         localStorage.setItem('display', this.display);
       }
     });
-    this.router.events.subscribe(e => {
-      if (e instanceof NavigationStart) {
-        this.name = e.url
-        if (this.name == "/mlabs" ||this.name == "/ex" ||this.name == "/shonat"  ){
-          this.nav = false
+    // this.router.events.subscribe(e => {
+    //   if (e instanceof NavigationStart) {
+    //     this.name = e.url
+    //     if (this.name == "/mlabs" ||this.name == "/ex" ||this.name == "/shonat"  ){
+    //       this.nav = false
          
-          localStorage.setItem("nav",this.nav)
+    //       localStorage.setItem("nav",this.nav)
   
-        } else {
-          this.nav = true
+    //     } else {
+    //       this.nav = true
          
-          localStorage.setItem("nav",this.nav)
-        }
-      }
-    });
-
+    //       localStorage.setItem("nav",this.nav)
+    //     }
+    //   }
+    // });
+  
 
   }
 }

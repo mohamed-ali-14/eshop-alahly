@@ -1,27 +1,34 @@
 .card{
   background-color: #e4e4e4;
   border-width: 0;
- 
+  overflow: hidden;
 }
 .btn{
   background-color: red;
 }
 .card-body{
-  background-color: black;
+  background-image: linear-gradient(180deg , black 30% , red 100%);
   border-radius: 0  0 20px 20px;
 }
-.card-body h5,a{
-  color: rgb(255, 255, 255) !important;
+.cardimg{
+  overflow: hidden;
+  transition: 400ms;
 }
+.card img{transition: 400ms;}
+.card:hover img{
+  transform:scale(1.2);
+   
+ }
 .btn-dark{
   background-color: #4f4c4d;
 }
 .cat{
   border-radius: 50px;
-  background-color: black;
+ background-image: linear-gradient(180deg , black 0% , red 100%);
  display: flex;
  flex-direction: column;
  align-items: center;
+ 
 
 }
 .card-body h5,a,h6{
@@ -35,13 +42,17 @@
   
   transition: all .5s;
 }
+.cat h5 ,h4 ,h6 ,a {
+  color: white;
+
+}
 .cat:hover img{
-  transform: scale(1.2);
+ transform: translate(-16px , -48px) rotate(16deg) scale(1.2);
   
 }
 .item{
   transition: all .5s;
 }
 .item:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }

@@ -15,6 +15,7 @@ import { ShonatComponent } from './shonat/shonat.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { CartComponent } from './cart/cart.component';
 import { DiscountPipe } from './discount.pipe';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DiscountPipe } from './discount.pipe';
     ShonatComponent,
     NotfoundComponent,
     CartComponent,
-    DiscountPipe
+    DiscountPipe,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

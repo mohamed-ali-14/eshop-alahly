@@ -34,7 +34,8 @@
     <div class="row">
 <div class="col-md-3 col-6 p-2 item" *ngFor="let item of all">
   <div class="card text-center">
-    <img [src]="item.photo" class="card-img-top w-100" alt="...">
+    <div class="cardimg">
+    <img [src]="item.photo" class="card-img-top w-100" alt="..."></div>
     <div class="card-body">
       <h5 class="card-title ">{{item.name}}</h5>
       <h6 class="linethrou">{{item.price}}</h6>

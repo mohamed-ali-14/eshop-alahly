@@ -8,15 +8,38 @@
               <img [src]="logo" class="w-10 logo" alt="" routerLink="/home" />
             </div>
           </div>
-          <div class="w-50 search">
-            <input
-              class="navinput"
-              type="text"
-              placeholder="نفسك فى ايه ...؟"
-            />
-            <span class="searchicon"
-              ><i class="fa-solid fa-magnifying-glass"></i
-            ></span>
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item px-3">
+                <div  class="item">
+                  <a class="nav-link" aria-current="page" routerLink="/home"
+                    >كل الاقسام</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item px-3">
+                <div class="item">
+                  <a class="nav-link" aria-current="page" routerLink="/mlabs"
+                    >ملابس</a
+                  >
+                </div>
+              </li>
+  
+              <li class="nav-item px-3">
+                <div class="item">
+                  <a class="nav-link" aria-current="page" routerLink="/shonat"
+                    >شنط</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item px-3">
+                <div class="item">
+                  <a class="nav-link" aria-current="page" routerLink="/ex"
+                    >اكسسوارات</a
+                  >
+                </div>
+              </li>
+            </ul>
           </div>
           <div class="d-flex">
             <div><i class="fa-regular fa-heart mx-3 icons"></i></div>
@@ -28,48 +51,10 @@
         </div>
       </div>
     </nav>
-    <nav class="navbar navbar-expand">
-      <div class="container d-flex justify-content-center">
-        <div>
-          <ul class="navbar-nav">
-            <li class="nav-item px-3">
-              <div class="item">
-                <a class="nav-link" aria-current="page" routerLink="/home"
-                  >كل الاقسام</a
-                >
-              </div>
-            </li>
-            <li class="nav-item px-3">
-              <div class="item">
-                <a class="nav-link" aria-current="page" routerLink="/mlabs"
-                  >ملابس</a
-                >
-              </div>
-            </li>
-
-            <li class="nav-item px-3">
-              <div class="item">
-                <a class="nav-link" aria-current="page" routerLink="/shonat"
-                  >شنط</a
-                >
-              </div>
-            </li>
-            <li class="nav-item px-3">
-              <div class="item">
-                <a class="nav-link" aria-current="page" routerLink="/ex"
-                  >اكسسوارات</a
-                >
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    
   </div>
 
-  <div class="container d-flex justify-content-center" *ngIf="nav">
-    <img class="panar" [src]="panar" alt="" />
-  </div>
+  
 </div>
 <div class="main2" *ngIf="display">
   <div class="nav2">
@@ -86,7 +71,7 @@
           <div class="navbar-brand">
             <img [src]="logo" class="w-10 logo" alt="" routerLink="/home" />
           </div>
-          <div *ngIf="display" class="dropdown black nav-item">
+          <div  class="black ">
             <button
               type="button"
               class="btn dropdown-toggle"
@@ -97,17 +82,17 @@
               <i class="fa-solid fa-list-ul drop"></i>
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
-              <li>
-                <a class="dropdown-item" routerLink="/home">كل الاقسام</a>
+              <li class="dropdown-item text-center" >
+                <a routerLink="/home">كل الاقسام</a>
               </li>
-              <li>
-                <a class="dropdown-item" routerLink="/mlabs"> ملابس</a>
+              <li class="dropdown-item text-center" >
+                <a  routerLink="/mlabs"> ملابس</a>
               </li>
-              <li>
-                <a class="dropdown-item" routerLink="/shonat">شنط </a>
+              <li class="dropdown-item text-center" >
+                <a  routerLink="/shonat">شنط </a>
               </li>
-              <li>
-                <a class="dropdown-item" routerLink="/ex">اكسسوارات</a>
+              <li class="dropdown-item text-center" >
+                <a routerLink="/ex">اكسسوارات</a>
               </li>
             </ul>
           </div>
@@ -115,7 +100,6 @@
       </div>
     </nav>
   </div>
-  <div class="container d-flex justify-content-center" *ngIf="nav">
-    <img class="panar" [src]="panar" alt="" />
-  </div>
+  
 </div>
+
