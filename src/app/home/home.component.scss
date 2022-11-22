@@ -2,13 +2,16 @@
   background-color: #e4e4e4;
   border-width: 0;
   overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 0  0 20px 20px;
+  box-shadow: rgba(255, 0, 0, 0.74) 2px 2px;
 }
 .btn{
   background-color: red;
 }
 .card-body{
-  background-image: linear-gradient(180deg , black 30% , red 100%);
-  border-radius: 0  0 20px 20px;
+  background-color: black;
+  
 }
 .cardimg{
   overflow: hidden;
@@ -24,15 +27,24 @@
 }
 .cat{
   border-radius: 50px;
- background-image: linear-gradient(180deg , black 0% , red 100%);
+ background-image: linear-gradient(180deg , black 50% , red 100%);
  display: flex;
  flex-direction: column;
  align-items: center;
  
 
 }
-.card-body h5,a,h6{
-  color: rgb(255, 255, 255) !important;
+.card-body {
+      h5{
+        color: rgb(255, 255, 255) !important;
+        font-size: 0.8rem;
+      }
+ h6,a{
+    color: rgb(255, 255, 255) !important;
+ }
+    
+  
+
 }
 
 .linethrou{
@@ -50,7 +62,12 @@
  transform: translate(-16px , -48px) rotate(16deg) scale(1.2);
   
 }
+.cat h5{
+  color: white !important;
+  text-shadow: #4f4c4d 2px 2px;
+}
 .item{
+  
   transition: all .5s;
 }
 .item:hover{

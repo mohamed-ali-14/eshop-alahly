@@ -7,7 +7,8 @@
     <div class="row g-2">
 <div class="col-md-3 col-6 p-2" *ngFor="let item of mlabs">
   <div class="card text-center">
-    <img [src]="item.photo" class="card-img-top w-100" alt="...">
+   
+    <div class="cardimg"> <img [src]="item.photo" class="card-img-top w-100" alt="..."></div>
     <div class="card-body">
       <h5 class="card-title ">{{item.name}}</h5>
       <h6 class="linethrou">{{item.price}}</h6>

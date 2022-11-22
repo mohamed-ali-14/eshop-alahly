@@ -1,24 +1,48 @@
-r .card {
-  background-color: #e4e4e4 !important;
-  border-width: 0 !important;
- 
+.card{
+  background-color: #e4e4e4;
+  border-width: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 0  0 20px 20px;
+  box-shadow: rgba(255, 0, 0, 0.74) 2px 2px;
+}
+.btn{
+  background-color: red;
+}
+.card-body{
+  background-color: black;
 }
 
-.btn {
-  background-color: red;
-  color: white !important;
+.cardimg{
+  overflow: hidden;
+  transition: 400ms;
 }
-.card-body {
-  background-color: black;
-  border-radius: 0 0 8px 8px;
-}
-.card-body h5,h6,
-a {
-  color: rgb(255, 255, 255) !important;
-}
-.btn-dark {
+.card img{transition: 400ms;}
+.card:hover img{
+  transform:scale(1.2);
+   
+ }
+.btn-dark{
   background-color: #4f4c4d;
 }
+
+.card-body {
+      h5{
+        color: rgb(255, 255, 255) !important;
+        font-size: 0.8rem;
+      }
+ h6,a{
+    color: rgb(255, 255, 255) !important;
+ }
+    
+  
+
+}
+
+
+
+
+
 table{
   color: white !important; 
 }
@@ -27,6 +51,7 @@ table{
 } 
 .modal-body h6{
   color: rgb(0, 0, 0) !important ; 
+
 }
 
 .modal-footer{
